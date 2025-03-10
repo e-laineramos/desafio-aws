@@ -1,14 +1,20 @@
-# Welcome to your CDK TypeScript project
+# API with AWS CDK, API Gateway, Lambda, and DynamoDB
 
-This is a blank project for CDK development with TypeScript.
+This project is an API that communicates with an AWS Lambda function and interacts with a DynamoDB database. The infrastructure is built using AWS CDK (Cloud Development Kit) with TypeScript. The API is exposed through Amazon API Gateway, which integrates with the Lambda function to process requests and interact with DynamoDB.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+# Overview
 
-## Useful commands
+The project architecture consists of the following AWS services:
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+* `API Gateway:` Exposes HTTP endpoints to access the API.
+* `Lambda:` Serverless function that processes requests and interacts with DynamoDB.
+* `DynamoDB:` NoSQL database to store and retrieve data.
+* `AWS CDK:` Infrastructure-as-code tool to provision and manage AWS resources.
+
+## Prerequisites
+
+Before getting started, ensure you have the following installed:
+
+* `Node.js:` (v14 or higher)
+* `AWS CLI:` configured with your AWS account credentials.
+* `AWS CDK:` installed globally (npm install -g aws-cdk).
